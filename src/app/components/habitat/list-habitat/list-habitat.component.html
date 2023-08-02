@@ -1,0 +1,42 @@
+<div class="container">
+
+  <h3 class="ml-3">Mis hábitats</h3>
+
+  <div class="col-md-12">
+    
+    <div class="row">
+      <div class="col-md-4 mt-4">
+
+        <div class="card">
+          <div class="card-body">
+            <h6>Terrario iD</h6>
+            <h4>Casa de Paco</h4>
+            <p>Descripcion</p>
+            <p>Especie : <strong>Especie</strong></p>
+            <p>Num Habitantes : <strong>2</strong></p>
+            <hr>
+            <div *ngIf="mqttData">
+              <p>Temperatura: {{ mqttData.temperature }}°C</p>
+              <p>Humedad: {{ mqttData.humidity }}%</p>
+            </div>
+
+            <div class="row justify-content-between container">
+              <div class="col-md-6 ">
+                <button class="btn btn-warning mr-auto" data-toggle="modal" data-target="#editModal">Editar</button>
+              </div>
+              <div class="col-md-6 ">
+                <button class="btn btn-danger ml-2" data-toggle="modal" data-target="#">Eliminar</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        
+      
+      </div>
+    </div>
+  
+  </div>
+
+</div>

@@ -1,0 +1,34 @@
+
+
+
+<div class="container mt-5 p-5">
+    <div class="row custom-section d-flex align-items-center">
+        <div class="col-12 col-lg-6">
+            <h2>El Hogar de tus mascotas</h2>
+            <h3>¡En linea!</h3>
+            <p>Registra, Actualiza, Elimina y Monitorea los hogares de tus mascotas. 
+            Dales la atención y el cuidado que merecen. <br>
+            ¡Simple, facil y rápido!.</p>
+            <a class="btn btn-outline" 
+            style="border-color: #EBA77F !important;" [routerLink]="['/registro']">Iniciar</a>
+        </div>
+
+        <div class="col-12 col-lg-6">
+            <img src="../../../assets/home.png" class="img-fluid rounded" alt="Pets Home">
+        </div>
+    </div>
+</div>
+
+<div class="container-lg pt-5">
+    <div class="row">
+
+        <div class="col-md-3">
+            <app-new-habitat></app-new-habitat>
+        </div>
+
+        <div class="col-md-8">
+            <app-habitats></app-habitats>
+        </div>
+
+    </div>
+</div>
